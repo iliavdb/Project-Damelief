@@ -144,6 +144,7 @@ body {
 
 /* ================================
    HERO
+   HERO
    ================================ */
 .hero {
   position: relative;
@@ -152,7 +153,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: url('afbeeldingen/backround.jpeg') center/cover no-repeat;
+  background: url('../images/backround.jpeg') center/cover no-repeat;
   overflow: hidden;
 }
 
@@ -304,7 +305,7 @@ body {
 }
 
 .aanbod-card:nth-child(1) .aanbod-img {
-  background: url('afbeeldingen/Kantoorruimte.jpg') center/cover no-repeat;
+  background: url('../images/Kantoorruimte.jpg') center/cover no-repeat;
 }
 
 .werkwijze-section {
@@ -322,7 +323,7 @@ body {
 .werkwijze-grid {
   display: flex;
   gap: 28px;
-  align-items: stretch;
+  align-items: flex-start;
 }
 
 .werkwijze-card {
@@ -377,7 +378,7 @@ body {
 }
 
 .aanbod-card:nth-child(2) .aanbod-img {
-  background: url('afbeeldingen/Innerlijke Kind.jpg') center/cover no-repeat;
+  background: url('../images/Innerlijke Kind.jpg') center/cover no-repeat;
 }
 
 /* Flip card styles */
