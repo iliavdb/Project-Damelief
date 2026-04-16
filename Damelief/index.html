@@ -25,12 +25,13 @@
   <!-- NAVIGATION -->
   <nav class="navbar">
     <div class="nav-logo">
-      <div class="logo-circle">D</div>
+      <button type="button" class="logo-button" onclick="scrollToHome()">D</button>
     </div>
     <ul class="nav-links">
       <li><a href="#home" class="active">Home</a></li>
       <li><a href="#over-ons">Over ons</a></li>
       <li><a href="#missie-visie">Missie & Visie</a></li>
+      <li><a href="#werkwijze">Werkwijze</a></li>
       <li><a href="#aanbod">Aanbod</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
@@ -71,6 +72,7 @@
 
   <!-- MISSIE & VISIE -->
   <section class="missie-visie-section" id="missie-visie">
+    <h2 class="section-title">Missie & Visie</h2>
     <div class="missie-visie-container">
       <!-- MISSIE -->
       <div class="missie-visie-block">
@@ -90,13 +92,81 @@
   <section class="aanbod-section" id="aanbod">
     <h2 class="aanbod-title">Aanbod</h2>
     <div class="aanbod-grid">
-      <div class="aanbod-card">
-        <div class="aanbod-img"></div>
-        <button class="aanbod-btn"><em>Orthomoleculair advies </em></button>
+      <div class="aanbod-card flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <div class="aanbod-img"></div>
+            <h3 class="flip-card-title">Orthomoleculair advies</h3>
+          </div>
+          <div class="flip-card-back">
+            <div class="aanbod-details">
+              <p>Eerste consult €120,- max. 90 minuten</p>
+              <p>Vervolgconsult €80,- max. 60 minuten</p>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="aanbod-card">
-        <div class="aanbod-img"></div>
-        <button class="aanbod-btn"><em>Systemisch coaching</em></button>
+      <div class="aanbod-card flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <div class="aanbod-img"></div>
+            <h3 class="flip-card-title">Systemisch coaching</h3>
+          </div>
+          <div class="flip-card-back">
+            <div class="aanbod-details">
+              <p>Familieopstellingen €110,- per sessie</p>
+              <p>Groepssessie*</p>
+              <p>Bedrijfsopstellingen*</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p class="aanbod-note">*De prijs hangt van verschillende factoren af. Neem gerust contact op voor een vrijblijvende offerte.</p>
+  </section>
+
+  <!-- WERKWIJZE -->
+  <section class="werkwijze-section" id="werkwijze">
+    <h2 class="section-title">Werkwijze</h2>
+    <div class="werkwijze-grid">
+      <div class="werkwijze-card">
+        <h3>Werkwijze</h3>
+        <p>We starten met een uitgebreide intake waarin we jouw klachten, leefstijl en achtergrond in kaart brengen. Vanuit daar stellen we een persoonlijk traject samen dat aansluit bij jouw behoeften.</p>
+        <p>Binnen de begeleiding combineren we onder andere:</p>
+        <div class="full-text" style="display: none;">
+          <ul>
+            <li>voedings- en leefstijladvies op basis van orthomoleculaire principes</li>
+            <li>suppletieadvies waar nodig</li>
+            <li>systemische oefeningen en opstellingen</li>
+            <li>coaching en bewustwording van patronen</li>
+          </ul>
+          <p>We werken stap voor stap, in jouw tempo. Praktisch waar het kan, verdiepend waar nodig. Het doel is niet alleen het verminderen van klachten, maar het creëren van blijvende balans en inzicht.</p>
+          <p>Samen werken we aan een stevige basis, zodat jij weer regie ervaart over je eigen gezondheid en leven.</p>
+        </div>
+        <a href="#" class="lees-meer" onclick="toggleText(this)">Lees meer</a>
+      </div>
+      <div class="werkwijze-card">
+        <h3>Voor wie?</h3>
+        <p>Herken jij dit? Je doet alles goed: gezond eten, sporten, mediteren, maar je voelt je nog steeds uitgeput. Deze begeleiding is voor jou als je voelt dat je lichaam signalen geeft, maar je daar nog geen duidelijke oplossing voor hebt gevonden.</p>
+        <p>Je herkent je bijvoorbeeld in één of meerdere van de volgende klachten:</p>
+        <div class="full-text" style="display: none;">
+  <ul>
+    <li>je energie zakt weg na het eten</li>
+    <li>je wordt moe wakker, ondanks een volle nacht slapen</li>
+    <li>je hoofd staat altijd "aan" en komt moeilijk tot rust</li>
+    <li>je hebt last van een opgeblazen gevoel, darmklachten of schommelingen in je bloedsuiker</li>
+    <li>je ervaart hormonale klachten, zoals PMS, cyclusproblemen, overgangsklachten of stemmingswisselingen</li>
+    <li>je voelt je vaak gespannen, overprikkeld of snel uit balans</li>
+    <li>je loopt steeds tegen dezelfde patronen aan in relaties of werk</li>
+    <li>je vindt het lastig om grenzen te voelen of aan te geven</li>
+    <li>je draagt verantwoordelijkheid die eigenlijk niet van jou is</li>
+    <li>je voelt je snel schuldig, past je aan of zet jezelf op de laatste plek</li>
+    <li>je hebt het gevoel dat je "vastzit", zonder precies te weten waarom</li>
+  </ul>
+  <p>Vaak zijn deze lichamelijke en emotionele signalen met elkaar verbonden. Je lichaam liegt niet en laat zien waar iets aandacht nodig heeft.</p>
+  <p>Je hoeft het niet eerst helemaal te begrijpen. Als jij voelt dat het anders mag, meer rust, meer energie, meer jezelf, dan ben je hier op de juiste plek.</p>
+</div>
+         <a href="#" class="lees-meer" onclick="toggleText(this)">Lees meer</a>
       </div>
     </div>
   </section>
@@ -176,6 +246,61 @@
       var el = document.getElementById('form-status');
       el.textContent = msg;
       el.className = 'form-status ' + type;
+    }
+
+    (function() {
+      var lastScrollY = window.scrollY;
+      var navbar = document.querySelector('.navbar');
+      var ticking = false;
+      var isUserScrolling = false;
+
+      window.addEventListener('scroll', function() {
+        isUserScrolling = true;
+        if (!ticking) {
+          window.requestAnimationFrame(function() {
+            var currentScroll = window.scrollY;
+            if (isUserScrolling) {
+              if (currentScroll > lastScrollY && currentScroll > 50) {
+                navbar.classList.add('hidden');
+              } else if (currentScroll <= lastScrollY) {
+                navbar.classList.remove('hidden');
+              }
+              lastScrollY = currentScroll;
+            }
+            ticking = false;
+          });
+          ticking = true;
+        }
+      });
+    })();
+
+    function scrollToHome() {
+      document.getElementById('home').scrollIntoView({ behavior: 'smooth' });
+    }
+  </script>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-content">
+      <p>&copy; <span id="year"></span> Damelief - Orthomoleculair advies &amp; Systemisch coaching</p>
+      <p>Alle rechten voorbehouden</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    function toggleText(link) {
+      event.preventDefault();
+      var card = link.parentElement;
+      var fullText = card.querySelector('.full-text');
+      if (fullText.style.display === 'none') {
+        fullText.style.display = 'block';
+        link.textContent = 'Lees minder';
+      } else {
+        fullText.style.display = 'none';
+        link.textContent = 'Lees meer';
+      }
     }
   </script>
 
