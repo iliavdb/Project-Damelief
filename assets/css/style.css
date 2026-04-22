@@ -6,7 +6,7 @@
   --bg:         #f0ece4;
   --sage:       #b8cfc0;
   --sage-light: #c9dbd1;
-  --gold:       #9a8430;
+  --gold:       #d6b77b;
   --dark:       #1e1e1e;
   --text:       #3a3a3a;
   --muted:      #888;
@@ -59,30 +59,18 @@ body {
   opacity: 0;
 }
 
-.logo-button {
-  width: 46px;
-  height: 46px;
-  border-radius: 50%;
-  background: rgba(184, 207, 192, 0.4);
-  border: 1.5px solid var(--sage);
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.logo-text {
   font-family: var(--font-serif);
-  font-size: 22px;
+  font-size: 24px;
   font-weight: 600;
   color: var(--gold);
-  letter-spacing: 1px;
-  transition: all 0.2s ease;
-  background: none;
-  border: none;
-  padding: 0;
+  letter-spacing: 0.5px;
   cursor: pointer;
+  transition: color 0.2s ease;
 }
 
-.logo-button:hover {
-  background: rgba(184, 207, 192, 0.6);
-  transform: scale(1.05);
+.logo-text:hover {
+  color: var(--dark);
 }
 
 .nav-links {
@@ -571,7 +559,7 @@ body {
 }
 
 .form-input:focus {
-  box-shadow: 0 0 0 2px rgba(154, 132, 48, 0.3);
+  box-shadow: 0 0 0 2px rgba(214, 183, 123, 0.3);
 }
 
 .form-textarea {
@@ -590,7 +578,7 @@ body {
 }
 
 .form-textarea:focus {
-  box-shadow: 0 0 0 2px rgba(154, 132, 48, 0.3);
+  box-shadow: 0 0 0 2px rgba(214, 183, 123, 0.3);
 }
 
 .form-footer {
@@ -698,16 +686,8 @@ body {
     display: none;
   }
 
-  .logo-button {
-    width: 40px;
-    height: 40px;
-    font-size: 18px;
-    transition: all 0.2s ease;
-  }
-
-  .logo-button:hover {
-    background: rgba(184, 207, 192, 0.6);
-    transform: scale(1.05);
+  .logo-text {
+    font-size: 20px;
   }
 
   .hero-title {
